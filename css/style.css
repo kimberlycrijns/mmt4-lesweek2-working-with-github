@@ -1,0 +1,135 @@
+ html, body {
+     margin: 0;
+     padding: 0;
+ }
+
+ table {
+     border-collapse: collapse;
+     border-spacing: 0;
+ }
+
+ img {
+     max-width: 100%;
+     height: auto;
+ }
+
+ fieldset, img {
+     border: 0;
+ }
+
+ input {
+     border: 1px solid #b0b0b0;
+     padding: 3px 5px 4px;
+     color: #979797;
+     width: 190px;
+ }
+
+ address, caption, cite, code, dfn, th, var {
+     font-style: normal;
+     font-weight: normal;
+ }
+
+ ol, ul {
+     list-style: none;
+ }
+
+ caption, th {
+     text-align: left;
+ }
+
+ h1, h2, h3, h4, h5, h6 {
+     font-size: 100%;
+     font-weight: normal;
+ }
+
+ q:before, q:after {
+     content: '';
+ }
+
+ abbr, acronym {
+     border: 0;
+ }
+
+ main {
+     max-width: 984px;
+     padding: 20px;
+     margin: 0 auto;
+ }
+
+ #menu {
+     background: lightcoral;
+     height: 50px;
+     font-family: 'Nunito', sans-serif;
+ }
+
+ li {
+     float: left;
+     color: white;
+     text-decoration: none;
+     margin: 15px;
+ }
+
+ h2 {
+     color: red;
+     font-size: 3em;
+     font-family: 'Nunito', sans-serif;
+ }
+
+ p {
+     color: black;
+     font-size: 15px;
+     margin-top: 20px;
+     font-family: 'Nunito', sans-serif;
+ }
+
+ .test {
+     width: 300px;
+     height: 300px;
+     margin: 50px;
+     float: left;
+ }
+
+ footer {
+     background: #C8E8E3;
+     margin-top: -50px;
+     width: 100%;
+     position: sticky;
+     clear: both;
+ }
+
+ h3 {
+     font-size: 1.5em;
+     font-family: 'Nunito', sans-serif;
+     margin-bottom: 1em; 
+ }
+
+ #accordion {
+     float: left;
+ }
+
+ @media only screen and (max-width: 900px) {
+     body {
+         background-color: lightgray;
+     }
+ }
+
+ @media only screen and (max-width: 800px) {
+     .test {
+         width: 200px;
+         height: 200px;
+         margin: 20px;
+         position: relative;
+     }
+ }
+
+ @media only screen and (max-width: 536px) {
+     .test {
+         float: none;
+         width: 100%;
+         margin: 100 auto;
+         position: relative;
+     }
+ }
+ span{
+     text-decoration: line-through;
+ }

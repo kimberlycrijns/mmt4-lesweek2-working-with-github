@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <header id="menu">
+        <nav>
+            <ul>
+                <a href="#" id="blackHeading">
+                    <li>h2 zwart</li>
+                </a>
+                <a href="#" id="newFont">
+                    <li> comic sans</li>
+                </a>
+                <a href="#" id="noCurse">
+                    <li> beep</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <header>
+                <h2>Labrador en labradoodle</h2>
+            </header>
+
+            <p id="p1"> My money's in that office, right? If she start giving me some <span> bullshit </span> about it ain't there, and
+                we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna
+                shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look
+                at me when I'm talking to you, motherfucker.
+                Jackie Brown (1997) </p>
+
+            <div class="test">
+                <img src="../img/labrador@2x.png" alt="Gengar" />
+            </div>
+
+            <div class="test">
+                <img src="../img/labradoodle.jpeg" alt="Gengar" />
+            </div>
+
+            <div id="accordion">
+                <h3 id="headerDrie">Section 1</h3>
+                <div>
+                    <p>
+                        My money's in that office, right? If she start giving me some bullshit about it ain't there, and
+                        we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm
+                        gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me
+                        too. Hey, look at me when I'm talking to you, motherfucker.  Jackie Brown (1997)
+                    </p>
+                </div>
+                <h3>Section 2</h3>
+                <div>
+                    <p>
+                        My money's in that office, right? If she start giving me some bullshit about it ain't there, and
+                        we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm
+                        gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me
+                        too. Hey, look at me when I'm talking to you, motherfucker.  Jackie Brown (1997)
+                    </p>
+                </div>
+                <h3>Section 3</h3>
+                <div>
+                    <p>
+                        My money's in that office, right? If she start giving me some bullshit about it ain't there, and
+                        we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm
+                        gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me
+                        too. Hey, look at me when I'm talking to you, motherfucker.  Jackie Brown (1997)
+                    </p>
+                    <ul>
+                        <li>List item one</li>
+                        <li>List item two</li>
+                        <li>List item three</li>
+                    </ul>
+                </div>
+                <h3>Section 4</h3>
+                <div>
+                    <p>
+                        My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I'm talking to you, motherfucker.  Jackie Brown (1997)
+                    </p>
+                    <p>
+                        My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I'm talking to you, motherfucker.  Jackie Brown (1997)
+                    </p>
+                </div>
+            </div>
+
+
+            <footer>
+                <p id="p2"> Dit is de footer </p>
+            </footer>
+        </article>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script>
+        var kleurtje = '#000';
+        var lettertype = 'Comic Sans MS';
+        var headerDrie = '#C2C5CC';
+
+        $(document).ready(function () {
+            //console.log('hello MAMDT');
+
+            $(function () {
+                $("#accordion").accordion();
+            });
+
+            $('#blackHeading').click(function () {
+                $('h2').css({ 'color': kleurtje });
+            });
+
+            $('#newFont').click(function () {
+                $('p').css({ 'fontFamily': lettertype });
+            });
+
+            $('#noCurse').click(function () {
+                $("#beep").text("My money's in that office, right? If she start giving me some *beep* about it ain't there, and we got to go someplace else and get is, I'm gonna shoot you in the head then and there. Then I'm gonna shoot that *beep* in the kneecaps, find out where my *beep* money is. She gonna tell me too. Hey, look at me when I'm talking to you, *beep*.");
+            });
+            $(function () { // voer functie uit zodra DOM klaar is
+                $("#accordion").accordion(); // de accordion functie van jQuery UI
+            });
+            $('#headerDrie').click(function () {
+                $('h3').css({ 'color': fontColor })
+            });
+        });
+    </script>
+</body>
+
+</html>
